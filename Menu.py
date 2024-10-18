@@ -11,18 +11,21 @@ def mostrar_menu():
 
 def ejecutar_opcion(opcion):
     if opcion == "1":
-        print("\nAbriendo análisis de tráfico...")
+        print("\nAbriendo tráfico...")
         os.system("python3 trafico.py")
     elif opcion == "2":
-        print("\nAbriendo detección de intrusos...")
+        print("\nAbriendo detección...")
         os.system("python3 deteccion.py")
     elif opcion == "3":
-        print("\nAbriendo consulta en Shodan...")
+        print("\nAbriendo Shodan...")
         os.system("python3 API_Shodan.py")
     elif opcion == "4":
-        print("\nAbriendo reporte de IP Abuse...")
+        print("\nAbriendo IP Abuse...")
         os.system("python3 API_IPABUSE.py")
     elif opcion == "5":
+        print("\nAbriendo Complejo...")
+        os.system("python3 Complejo.py")
+    elif opcion == "6":
         print("Saliendo del programa...")
         sys.exit(0)
     else:
